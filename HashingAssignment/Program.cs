@@ -31,6 +31,9 @@ namespace HashingAssignment
 
                         Console.WriteLine("Your hashed string:");
                         Console.WriteLine(Convert.ToBase64String(hashedHmacSha256));
+                        Console.WriteLine();
+                        Console.WriteLine("Your hashed string in hex:");
+                        Console.WriteLine(BitConverter.ToString(hashedHmacSha256).Replace("-", string.Empty));
 
                         break;
 
@@ -48,6 +51,8 @@ namespace HashingAssignment
 
                         Console.WriteLine("Your hashed string:");
                         Console.WriteLine(Convert.ToBase64String(hashedHmacSha1));
+                        Console.WriteLine("Your hashed string in hex:");
+                        Console.WriteLine(BitConverter.ToString(hashedHmacSha1).Replace("-", string.Empty));
                         break;
 
                     case 3:
@@ -64,6 +69,8 @@ namespace HashingAssignment
 
                         Console.WriteLine("Your hashed string:");
                         Console.WriteLine(Convert.ToBase64String(hashedHmacSha512));
+                        Console.WriteLine("Your hashed string in hex:");
+                        Console.WriteLine(BitConverter.ToString(hashedHmacSha512).Replace("-", string.Empty));
                         break;
 
                     case 4:
@@ -80,6 +87,8 @@ namespace HashingAssignment
 
                         Console.WriteLine("Your hashed string:");
                         Console.WriteLine(Convert.ToBase64String(hashedHmacMd5));
+                        Console.WriteLine("Your hashed string in hex:");
+                        Console.WriteLine(BitConverter.ToString(hashedHmacMd5).Replace("-", string.Empty));
                         break;
 
                     case 5:
@@ -92,6 +101,8 @@ namespace HashingAssignment
 
                         Console.WriteLine("Your hashed string:");
                         Console.WriteLine(Convert.ToBase64String(hashedSha1));
+                        Console.WriteLine("Your hashed string in hex:");
+                        Console.WriteLine(BitConverter.ToString(hashedSha1).Replace("-", string.Empty));
                         break;
 
                     case 6:
@@ -104,6 +115,8 @@ namespace HashingAssignment
 
                         Console.WriteLine("Your hashed string:");
                         Console.WriteLine(Convert.ToBase64String(hashedSha256));
+                        Console.WriteLine("Your hashed string in hex:");
+                        Console.WriteLine(BitConverter.ToString(hashedSha256).Replace("-", string.Empty));
                         break;
 
                     case 7:
@@ -116,6 +129,8 @@ namespace HashingAssignment
 
                         Console.WriteLine("Your hashed string:");
                         Console.WriteLine(Convert.ToBase64String(hashedSha512));
+                        Console.WriteLine("Your hashed string in hex:");
+                        Console.WriteLine(BitConverter.ToString(hashedSha512).Replace("-", string.Empty));
                         break;
 
                     case 8:
@@ -128,6 +143,8 @@ namespace HashingAssignment
 
                         Console.WriteLine("Your hashed string:");
                         Console.WriteLine(Convert.ToBase64String(hashedmd5));
+                        Console.WriteLine("Your hashed string in hex:");
+                        Console.WriteLine(BitConverter.ToString(hashedmd5).Replace("-", string.Empty));
                         break;
                 }
             }
